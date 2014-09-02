@@ -22,6 +22,9 @@ app.provider "ngQuickDateDefaults", ->
       closeButtonHtml: '&times;'
       nextLinkHtml: 'Next &rarr;'
       prevLinkHtml: '&larr; Prev'
+      clearButtonHtml: 'Clear'
+      dateLabelHtml: 'Date'
+      timeLabelHtml: 'Time'
       disableTimepicker: false
       disableClearButton: false
       defaultTime: null
@@ -326,11 +329,11 @@ app.directive "quickDatepicker", ['ngQuickDateDefaults', '$filter', '$sce', (ngQ
                 <a href='' tabindex='-1' class='quickdate-close' ng-click='toggleCalendar()'><div ng-bind-html='closeButtonHtml'></div></a>
                 <div class='quickdate-text-inputs'>
                   <div class='quickdate-input-wrapper'>
-                    <label>Date</label>
+                    <label><span ng-bind-html='dateLabelHtml'></span></label>
                     <input class='quickdate-date-input' ng-class="{'ng-invalid': inputDateErr}" name='inputDate' type='text' ng-model='inputDate' placeholder='1/1/2013' ng-enter="selectDateFromInput(true)" ng-blur="selectDateFromInput(false)" on-tab='onDateInputTab()' />
                   </div>
                   <div class='quickdate-input-wrapper' ng-hide='disableTimepicker'>
-                    <label>Time</label>
+                    <label><span ng-bind-html='timeLabelHtml'></span></label>
                     <input class='quickdate-time-input' ng-class="{'ng-invalid': inputTimeErr}" name='inputTime' type='text' ng-model='inputTime' placeholder='12:00 PM' ng-enter="selectDateFromInput(true)" ng-blur="selectDateFromInput(false)" on-tab='onTimeInputTab()'>
                   </div>
                 </div>
@@ -352,7 +355,7 @@ app.directive "quickDatepicker", ['ngQuickDateDefaults', '$filter', '$sce', (ngQ
                   </tbody>
                 </table>
                 <div class='quickdate-popup-footer'>
-                  <a href='' class='quickdate-clear' tabindex='-1' ng-hide='disableClearButton' ng-click='clear()'>Clear</a>
+                  <a href='' class='quickdate-clear' tabindex='-1' ng-hide='disableClearButton' ng-click='clear()'><span ng-bind-html='clearButtonHtml'></span></a>
                 </div>
               </div>
             </div>
