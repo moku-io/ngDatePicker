@@ -75,7 +75,7 @@ There are a number of options that be configured inline with attributes. Here ar
 | clearButtonHtml     | 'Clear'          | By default, the clear button is just text. You may set it to an icon or image.                      |
 | closeButtonHtml     | 'X'              | By default, the close button is just an X character. You may set it to an icon similar to `buttonIconHtml` |
 | dateLabelHtml       | 'Date'           | By default, the date label is just text. You may set it to an icon or image.                   |
-| timeLabelHtml       | 'Time'           | By default, the time label is just text. You may set it to an icon or image. | default-calendar-date| null                | Default month for the date picker's calendar (overriding the current month), if the value of the model is not set.|                 |
+| timeLabelHtml       | 'Time'           | By default, the time label is just text. You may set it to an icon or image. | | default-calendar-date | null                | Default month for the date picker's calendar (overriding the current month), if the value of the model is not set.|
 
 **Example:**
 
