@@ -72,6 +72,10 @@ There are a number of options that be configured inline with attributes. Here ar
 | default-time         | null                | Time that will be set when you click on a date on the calendar. Must be in 24-hour format.  |
 | init-value           | null                | Set the initial value of the date inline as a string. Will be immediately parsed and set as the value of your model.|
 | date-filter          | null                | Set to a function to enable/disable dates. Useful for disabling weekends, etc. [See more below](#date-filter-function) |
+| clearButtonHtml     | 'Clear'          | By default, the clear button is just text. You may set it to an icon or image.                      |
+| closeButtonHtml     | 'X'              | By default, the close button is just an X character. You may set it to an icon similar to `buttonIconHtml` |
+| dateLabelHtml       | 'Date'           | By default, the date label is just text. You may set it to an icon or image.                   |
+| timeLabelHtml       | 'Time'           | By default, the time label is just text. You may set it to an icon or image.                   |
 
 **Example:**
 
