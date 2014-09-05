@@ -1,6 +1,7 @@
 {
   "name": "ngQuickDate",
-  "version": "1.3.0",
+  "repository": "https://github.com/KillerCodeMonkey/ngQuickDate.git",
+  "version": "1.3.3",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-coffee": "~0.7",
