@@ -379,7 +379,7 @@ app.run ['$templateCache', ($templateCache) ->
           </thead>
           <tbody>
             <tr ng-repeat='week in weeks'>
-              <td ng-mousedown='selectDate(day.date, true, true)' ng-click='$event.preventDefault()' ng-class='{"other-month": day.other, "disabled-date": day.disabled, "selected": day.selected, "is-today": day.today}' ng-repeat='day in week'>{{day.date | date:'d'}}</td>
+              <td ng-click='selectDate(day.date, true, true)' ng-class='{"other-month": day.other, "disabled-date": day.disabled, "selected": day.selected, "is-today": day.today}' ng-repeat='day in week'>{{day.date | date:'d'}}</td>
             </tr>
           </tbody>
       </table>
