@@ -272,8 +272,8 @@ app.directive "quickDatepicker", ['ngQuickDateDefaults', '$filter', '$sce', (ngQ
       if typeof(scope.dateFilter) == 'function' && !scope.dateFilter(date)
         return false
       ngModelCtrl.$setViewValue(date)
-      var tmpDate = $filter('date')(date, scope.dateFormat);
-+			date = parseDateString('' + tmpDate + ' ' + scope.inputTime);
+      tmpDate = $filter('date')(date, scope.dateFormat)
+      date = parseDateString('' + tmpDate + ' ' + scope.inputTime)
       if closeCalendar
         scope.toggleCalendar(false)
       true
