@@ -1,8 +1,7 @@
 ## Notice:
 
-Sorry for the lack of updates lately. After using this directive in my own app, I realized it was lacking in a few fundamental ways, so I started on a new datepicker that is different enough that it called for a completely separate repo. I should have something up on Github soon.
-
-In the meantime, if someone would like to help maintain this project, please let me know.
+Original repository is not supported very much.
+Here the source code of the original repo + the important open pull requests! 
 
 ---
 
