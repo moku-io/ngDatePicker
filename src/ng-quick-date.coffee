@@ -360,11 +360,11 @@ app.run ['$templateCache', ($templateCache) ->
         <a href='' tabindex='-1' class='quickdate-close' ng-click='toggleCalendar()'><div ng-bind-html='closeButtonHtml'></div></a>
         <div class='quickdate-text-inputs'>
           <div class='quickdate-input-wrapper'>
-            <label>Date</label>
+            <label ng-bind-html='dateLabelHtml'></label>
             <input class='quickdate-date-input' ng-class="{'ng-invalid': inputDateErr}" name='inputDate' type='text' ng-model='inputDate' placeholder='{{ datePlaceholder }}' ng-enter="selectDateFromInput(true)" ng-blur="selectDateFromInput(false)" on-tab='onDateInputTab()' />
           </div>
           <div class='quickdate-input-wrapper' ng-hide='disableTimepicker'>
-            <label>Time</label>
+            <label ng-bind-html='timeLabelHtml'></label>
             <input class='quickdate-time-input' ng-class="{'ng-invalid': inputTimeErr}" name='inputTime' type='text' ng-model='inputTime' placeholder='{{ timePlaceholder }}' ng-enter="selectDateFromInput(true)" ng-blur="selectDateFromInput(false)" on-tab='onTimeInputTab()'>
           </div>
         </div>
