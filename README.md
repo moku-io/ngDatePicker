@@ -3,10 +3,12 @@
 Original repository is not supported very much.
 Here the source code of the original repo + the important open pull requests!
 
--> added support to set month labels
--> added ability to hide date input
--> set placeholder to current date
+* merged manually open pull requests
+* added support to set month labels
+* added ability to hide date input
+* set placeholder to current date
 
+that's why bower name ngDatePicker
 ---
 
 # ngQuickDate
@@ -31,7 +33,7 @@ Or add it to your bower.json file:
 de
 ```javascript
 dependencies: {
-  "ngQuickDate": "~1.3.0"
+  "ngDatePicker": "~1.3.4"
 }
 ```
 
