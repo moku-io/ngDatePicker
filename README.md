@@ -1,7 +1,11 @@
 ## Notice:
 
 Original repository is not supported very much.
-Here the source code of the original repo + the important open pull requests! 
+Here the source code of the original repo + the important open pull requests!
+
+-> added support to set month labels
+-> added ability to hide date input
+-> set placeholder to current date
 
 ---
 
@@ -65,6 +69,7 @@ There are a number of options that be configured inline with attributes. Here ar
 | required             | false               | Makes the field required. Will set $invalid on the control and the form otherwise           |
 | hover-text           | null                | Hover text for button.                                                                      |
 | icon-class           | null                | If set, `<i class='some-class'></i>` will be prepended inside the button                    |
+| disable-datepicker   | false               | If true, the datepicker inputfield will be hidden                                           |
 | disable-timepicker   | false               | If true, the timepicker will be disabled and the default label format will be just the date |
 | disable-clear-button | false               | If true, the clear button will be removed                                                   |
 | on-change            | null                | Set to a function that will be called when the date is changed                              |
@@ -104,9 +109,10 @@ app.config(function(ngQuickDateDefaultsProvider) {
 | prevLinkHtml        | 'Prev'           | By default, the previous month link is just text. You may set it to an icon or image.               |
 | dayAbbreviations    | (see below)      | The day abbreviations used in the top row of the calendar.                                          |
 | parseDateFunction   | (see below)      | The function used to convert strings to date objects.                                               |
+| months              | (see below)      | The month names or abbreviations used in the top row of the calendar.                                          |
 
 **Default Day Abbreviations:** `["Su", "M", "Tu", "W", "Th", "F", "Sa"]`
-
+**Default months:** `["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]`
 **Default Parse Date Function:**
 
 ```javascript
