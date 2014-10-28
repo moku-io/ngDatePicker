@@ -26,6 +26,7 @@ app.provider "ngQuickDateDefaults", ->
             dateLabelHtml: 'Date'
             timeLabelHtml: 'Time'
             disableTimepicker: false
+            disableDatepicker: false
             disableClearButton: false
             defaultTime: null
             months: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
@@ -73,7 +74,7 @@ app.directive "quickDatepicker", ['ngQuickDateDefaults', '$filter', '$sce', (ngQ
             if typeof(attrs.initValue) == 'string'
                 ngModelCtrl.$setViewValue(parseDateString(attrs.initValue))
             if !scope.defaultTime
-                templateDate = new Date(2013, 0, 1, 12, 0)
+                templateDate = new Date()
                 scope.datePlaceholder = $filter('date')(templateDate, scope.dateFormat);
                 scope.timePlaceholder = $filter('date')(templateDate, scope.timeFormat);
             setCalendarDate()
@@ -363,7 +364,7 @@ app.run ['$templateCache', ($templateCache) ->
             <div class='quickdate-popup' ng-class='{open: calendarShown}'>
                 <a href='' tabindex='-1' class='quickdate-close' ng-click='toggleCalendar()'><div ng-bind-html='closeButtonHtml'></div></a>
                 <div class='quickdate-text-inputs'>
-                    <div class='quickdate-input-wrapper'>
+                    <div class='quickdate-input-wrapper' ng-hide='disableDatepicker'>
                         <label ng-bind-html='dateLabelHtml'></label>
                         <input class='quickdate-date-input' ng-class="{'ng-invalid': inputDateErr}" name='inputDate' type='text' ng-model='inputDate' placeholder='{{ datePlaceholder }}' ng-enter="selectDateFromInput(true)" ng-blur="selectDateFromInput(false)" on-tab='onDateInputTab()' />
                     </div>
