@@ -1,7 +1,6 @@
 ## Notice:
 
-Original repository is not supported very much.
-Here the source code of the original repo + the important open pull requests!
+Original repository is not supported very much. Here is the source code of the original repo + the important open pull requests + some own changes!
 
 * merged manually open pull requests
 * added support to set month labels
