@@ -8,8 +8,7 @@ Here the source code of the original repo + the important open pull requests!
 * added ability to hide date input
 * set placeholder to current date
 
-that's why bower name ngDatePicker
----
+that's why bower name **ngDatePicker**
 
 # ngQuickDate
 
@@ -26,14 +25,14 @@ ngQuickDate is an [Angular.js](http://angularjs.org/) Date/Time picker directive
 You can also install the package using [Bower](http://bower.io).
 
 ```sh
-bower install ngQuickDate
+bower install ngDatePicker
 ```
 
 Or add it to your bower.json file:
 de
 ```javascript
 dependencies: {
-  "ngDatePicker": "~1.3.4"
+  "ngDatePicker": "~1.3.5"
 }
 ```
 
