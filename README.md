@@ -25,7 +25,10 @@ ngQuickDate is an [Angular.js](http://angularjs.org/) Date/Time picker directive
 You can also install the package using [Bower](http://bower.io).
 
 ```sh
-bower install ngDatePicker
+bower install ngdatepicker
+```
+```sh
+bower install ng-date-picker
 ```
 
 Or add it to your bower.json file:
