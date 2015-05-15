@@ -22,7 +22,7 @@ app.provider "ngQuickDateDefaults", ->
             closeButtonHtml: '&times;'
             nextLinkHtml: 'Next &rarr;'
             prevLinkHtml: '&larr; Prev'
-            clearButtonHtml: 'Clear'
+            clearButtonText: 'Clear'
             dateLabelHtml: 'Date'
             timeLabelHtml: 'Time'
             disableTimepicker: false
@@ -548,7 +548,7 @@ app.run ['$templateCache', ($templateCache) ->
                     </tbody>
             </table>
                 <div class='quickdate-popup-footer'>
-                    <a href='' class='quickdate-clear' tabindex='-1' ng-hide='disableClearButton' ng-click='clear()'>Clear</a>
+                    <a href='' class='quickdate-clear' tabindex='-1' ng-hide='disableClearButton' ng-click='clear()'>{{ clearButtonText }}</a>
                 </div>
             </div>
         </div>
