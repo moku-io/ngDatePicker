@@ -128,9 +128,9 @@ table.quickdate-calendar td:hover {
   background-color: #fafafa;
   border: solid 1px #dddddd;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 10px 30px rgba(25, 25, 25, 0.92);
-  -moz-box-shadow: 0px 10px 30px rgba(25, 25, 25, 0.92);
-  box-shadow: 0px 10px 30px rgba(25, 25, 25, 0.92);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 .quickdate-action-link:visited,
 .quickdate-action-link:hover {
